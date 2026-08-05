@@ -29,9 +29,9 @@ class TrainConfig:
     class_id: int = 0
     models: tuple[ModelSpec, ...] = field(
         default_factory=lambda: (
-            ModelSpec("yolo26n.pt", batch=32),
-            ModelSpec("yolo26m.pt", batch=16),
-            ModelSpec("yolo26x.pt", batch=8),
+            ModelSpec("yolo26n.pt", batch=1024),
+            ModelSpec("yolo26m.pt", batch=1024),
+            ModelSpec("yolo26x.pt", batch=1024),
         )
     )
 
