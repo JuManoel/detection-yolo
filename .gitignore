@@ -8,3 +8,15 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Data and training artifacts
+data/datasets/
+runs/
+*.pt
+*.onnx
+*.engine
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
