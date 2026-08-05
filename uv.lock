@@ -24,6 +24,7 @@ source = { editable = "." }
 dependencies = [
     { name = "kaggle" },
     { name = "pillow" },
+    { name = "python-dotenv" },
     { name = "pyyaml" },
     { name = "requests" },
     { name = "tqdm" },
@@ -34,6 +35,7 @@ dependencies = [
 requires-dist = [
     { name = "kaggle", specifier = ">=1.6.0" },
     { name = "pillow", specifier = ">=10.0.0" },
+    { name = "python-dotenv", specifier = ">=1.0.0" },
     { name = "pyyaml", specifier = ">=6.0" },
     { name = "requests", specifier = ">=2.31.0" },
     { name = "tqdm", specifier = ">=4.66.0" },

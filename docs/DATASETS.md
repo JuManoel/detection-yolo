@@ -16,7 +16,15 @@ data/datasets/
 
 ## Requisitos
 
-- Cuenta Kaggle y API token en `~/.kaggle/kaggle.json` (o variables `KAGGLE_USERNAME` / `KAGGLE_KEY`).
+- Token de Kaggle en `.env` (copia de `.env.example`):
+
+  ```bash
+  cp .env.example .env
+  # pega el token de https://www.kaggle.com/settings/api
+  KAGGLE_API_TOKEN=KGAT_...
+  ```
+
+  El pipeline `download` carga `.env` vía `python-dotenv` **antes** de importar `kaggle`.
 - Espacio en disco: varios GB (CUB ~1 GB, NABirds ~GB, FBD-SV ~GB, COCO bird subset).
 
 ## Fuentes

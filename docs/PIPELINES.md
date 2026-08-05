@@ -19,6 +19,7 @@ CLI → Application → Domain
 ## Comandos
 
 ```bash
+cp .env.example .env   # y define KAGGLE_API_TOKEN
 uv sync
 uv run download   # Kaggle + COCO bird → data/datasets/yolo
 uv run train      # yolo26n / yolo26m / yolo26x

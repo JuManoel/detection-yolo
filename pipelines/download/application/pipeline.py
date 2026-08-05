@@ -33,6 +33,9 @@ class DownloadPipeline:
         self.writer = writer or YoloWriter()
 
     def run(self) -> Path:
+        from pipelines.shared.infrastructure.env import load_project_env
+
+        load_project_env()
         ensure_dir(self.paths.raw_dir)
         text = self.paths.datasets_list.read_text(encoding="utf-8")
         specs = parse_dataset_list(text)
